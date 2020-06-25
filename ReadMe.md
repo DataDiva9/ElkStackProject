@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the NetworkDiagram file may be used to install only certain pieces of it, such as Filebeat.
 
-1. [filebeat-playbook.yml](Ansible/filebeat-playbook.yml
+1. [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
 2. [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 3. [ELK-playbook.yml](Ansible/elk.yml)
 
@@ -31,11 +31,11 @@ Load balancing ensures that the application will be highly efficient and availab
 *Load balancers provide:*
 
 1. *Distributed Allocation* 
-	*⁃ Manages system thru-put so no single device is overly burdened or taxed.* 
-	*⁃ predictive algorithms can determine bottlenecks before they happen and proactively shift traffic to a different server* 
-	*⁃ SSL (Secure Sockets Layer) is the standard technology that establishes a link between web server and browser, passing the request on (SSL Termination). This saves the web server from having to “spend” extra CPU cycles required for description, which increases application performance.* 
-		*⁃ This introduces a risk since the traffic between the load balancer and web server is no longer encrypted.* 
-		*⁃ This risk is reduced when the load balancer is housed in the same data center as the web server.* 
+	- *Manages system thru-put so no single device is overly burdened or taxed.* 
+	- *predictive algorithms can determine bottlenecks before they happen and proactively shift traffic to a different server.*
+	- *SSL (Secure Sockets Layer) is the standard technology that establishes a link between web server and browser, passing the request on (SSL Termination). This saves the web server from having to “spend” extra CPU cycles required for description, which increases application performance.* 
+	- *This introduces a risk since the traffic between the load balancer and web server is no longer encrypted.* 
+	- *This risk is reduced when the load balancer is housed in the same data center as the web server.* 
 		
 2. *High Availability* 
 	- *Redundancy* 
