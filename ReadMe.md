@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   -[filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
   -[metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
-  -[ELK-playbook.yml](Ansible/ELK.yml)
+  -[ELK-playbook.yml](Ansible/elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -31,7 +31,7 @@ Answer: Load balancers help protect the CIA triad (Availability, Integrity, Conf
 
 Load balancers provide:
 
-	1.	Distributed Allocation
+1.	Distributed Allocation
 	⁃	Manages system thru-put so no single device is overly burdened or taxed.
 	⁃	predictive algorithms can determine bottlenecks before they happen and proactively shift traffic to a different server
 	⁃	SSL (Secure Sockets Layer) is the standard technology that establishes a link between web server and browser, passing the request on (SSL Termination). This saves the web server from having to “spend” extra CPU cycles required for description, which increases application performance. 
@@ -44,8 +44,6 @@ Load balancers provide:
 	⁃	in case of failure, other servers/machines/systems pick up the slack and allow the system to avoid down time. 
 	3.	Disaster Recovery
 	⁃	Should the redundancy in the system allows recovery to happen as quickly as possible. Infected or vulnerable servers can be brought down, investigated, tinged, and fixed. A redundant copy of information allows the network as whole to be recovered much faster while minimizing loss. 
-
-
 
 ###Question: What is the advantage of a jump box?
 
