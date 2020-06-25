@@ -6,9 +6,9 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the NetworkDiagram file may be used to install only certain pieces of it, such as Filebeat.
 
-  -[filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
-  -[metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
-  -[ELK-playbook.yml](Ansible/elk.yml)
+1. [filebeat-playbook.yml](Ansible/filebeat-playbook.yml
+2. [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
+3. [ELK-playbook.yml](Ansible/elk.yml)
 
 This document contains the following details:
 - **Description of the Topology**
@@ -72,6 +72,8 @@ Load balancing ensures that the application will be highly efficient and availab
 | VM1           	| DVWA1              	| Web Server 	| 52.188.40.288 	| 10.0.0.6    	| Linux            	|
 | VM2           	| DVWA2              	| Web Server 	| 52.188.40.288 	| 10.0.0.7    	| Linux            	|
 | ELK VM        	| ELK                	| Web Server 	| 52.247.56.101 	| 10.1.0.4    	| Linux            	|
+
+
 ***Access Policies***
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -107,12 +109,12 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 
 The playbook implements the following tasks:
-In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-	▪	SSH into the Jump-Box-Provisoner from local host
-	▪	Start and attach the Ansible Docker Container (as root)
-	▪	Create Elk Playbook (elk.yml) in /etc/ansible/
-	▪	Run Elk Playbook (ansible-playbook elk.yml)
-	▪	SSH into ELK VM to verify configuration and that it is up and running
+In 3-5 bullets, explain the steps of the ELK installation play. 
+1. SSH into the Jump-Box-Provisoner from local host
+2. Start and attach the Ansible Docker Container (as root)
+3. Create Elk Playbook (elk.yml) in /etc/ansible/
+4. Run Elk Playbook (ansible-playbook elk.yml)
+5. SSH into ELK VM to verify configuration and that it is up and running
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -120,12 +122,12 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ***Target Machines & Beats***
 This ELK server is configured to monitor the following machines:
-	•	DVWA1 - 10.0.0.6
-	•	DVWA2 - 10.0.0.7
+1. DVWA1 - 10.0.0.6
+2. DVWA2 - 10.0.0.7
 
 We have installed the following Beats on these machines:
-	•	Filebeat
-	•	Metricbeat
+1. Filebeat
+2. Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 
